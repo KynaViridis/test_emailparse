@@ -3,12 +3,9 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 class SuccessfulEmail extends Model
 {
-    use SoftDeletes;
-
     protected $table = 'successful_emails';
 
     protected $fillable = [

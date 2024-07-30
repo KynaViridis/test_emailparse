@@ -29,7 +29,6 @@ class CreateSuccessfulEmailsTable extends Migration
                 $table->text('to');
                 $table->integer('timestamp');
                 $table->timestamps();
-                $table->softDeletes();
             });
         }
     }
