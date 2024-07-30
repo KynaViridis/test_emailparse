@@ -14,7 +14,7 @@ class EmailController extends Controller
 
     public function show($id)
     {
-        $email = SuccessfulEmail::find($id);
+        $email = SuccessfulEmail::paginate(30);
 
         if ($email) {
             return response()->json($email);
